@@ -5,7 +5,7 @@ import sys
 import argparse
 import re
 
-version = "1.0"
+version = "1.1"
 show_warnings = True
 weight_precision = 1
 assignment_precision = 3
@@ -145,8 +145,7 @@ def main(argv):
 			print("warning: not outputing to '" + output_file + "' because update flag specified", file=sys.stderr)
 		output_file = input_file
 	elif show_warnings and output_file and os.path.exists(output_file):
-		if show_warnings:
-			print("warning: '" + output_file + "' will be overwritten", file=sys.stderr)
+		print("warning: '" + output_file + "' will be overwritten", file=sys.stderr)
 
 	f = open(input_file, "r")
 	txt = f.read()
