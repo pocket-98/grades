@@ -3,7 +3,7 @@ Python script for calculating and updating grades from a file
 
 ### Help
 ```
-usage: grades [-h] [-v] [-u] [-o <output-file>] <grades-file>
+usage: grades.py [-h] [-v] [-u] [-o <output-file>] <grades-file>
 
 Parse and calculate grades from file.
 
